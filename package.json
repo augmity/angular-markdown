@@ -1,0 +1,31 @@
+{
+  "name": "agm-angular-markdown",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augmity/angular-markdown.git"
+  },
+  "keywords": [
+    "augmity",
+    "angular",
+    "markdown",
+    "markdown-it"
+  ],
+  "author": "augmity",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/augmity/angular-markdown/issues"
+  },
+  "homepage": "https://github.com/augmity/angular-markdown#readme",
+  "dependencies": {
+    "markdown-it": "^8.2.2"
+  },
+  "peerDependencies": {
+    "@angular/core": "*"
+  }
+}
