@@ -1,31 +1,56 @@
 {
   "name": "agm-angular-markdown",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "license": "MIT",
+  "author": {
+    "name": "augmity",
+    "email": "augmity@augmity.com"
   },
+  "engines": {
+    "node": ">= 5.4.1"
+  },
+  "contributors": [],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/augmity/angular-markdown.git"
   },
+  "bugs": {
+    "url": "https://github.com/augmity/angular-markdown/issues"
+  },
+  "homepage": "https://github.com/augmity/angular-markdown#readme",
+  "description": "Angular markdown components",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build:aot": "ngc -p tsconfig.json",
+    "build:jit": "tsc -p tsconfig.json",
+    "build": "npm run clean && npm run build:aot",
+    "start": "npm run build"
+  },
+  "types": "dist/index.d.ts",
+  "private": false,
   "keywords": [
     "augmity",
     "angular",
     "markdown",
     "markdown-it"
   ],
-  "author": "augmity",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/augmity/angular-markdown/issues"
-  },
-  "homepage": "https://github.com/augmity/angular-markdown#readme",
   "dependencies": {
-    "markdown-it": "^8.2.2"
+    "@angular/common": "^2.4.1",
+    "@angular/compiler": "^2.4.1",
+    "@angular/core": "^2.4.1",
+    "@angular/platform-browser": "^2.4.1",
+    "core-js": "2.4.1",
+    "markdown-it": "^8.2.2",    
+    "rimraf": "^2.5.4",
+    "rxjs": "5.0.2",
+    "typescript": "2.0.10",
+    "zone.js": "0.7.4"
   },
-  "peerDependencies": {
-    "@angular/core": "*"
+  "devDependencies": {
+    "@angular/compiler-cli": "^2.4.1",
+    "@angular/platform-server": "^2.4.1",
+    "@types/jasmine": "2.2.30",
+    "@types/node": "6.0.54"
   }
 }

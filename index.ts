@@ -1,1 +1,1 @@
-export { AngularMarkdownModule } from './src/angular-markdown.module';
+export * from './src/index';
