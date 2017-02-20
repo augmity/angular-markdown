@@ -1,37 +1,18 @@
 {
-    "compilerOptions": {
-        "baseUrl": "",
-        "target": "es5",
-        "module": "es2015",
-        "moduleResolution": "node",
-        "declaration": true,
-        "noImplicitAny": false,
-        "sourceMap": true,
-        "mapRoot": "",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "outDir": "./dist",
-        "rootDir": ".",
-        "skipLibCheck": true,
-        "typeRoots": ["./node_modules/@types"],
-        "types": [
-            "node"
-        ],
-        "lib": [
-            "dom",
-            "es2015"
-        ]
-    },
-    "compileOnSave": false,
-    "buildOnSave": false,
-    "exclude": [
-        "node_modules",
-        "dist",
-        "**/*.ngfactory.ts",
-        "**/*.shim.ts"
-    ],
-    "angularCompilerOptions": {
-        "genDir": "dist",
-        "entryModule": "./src/angular-markdown.module#AngularMarkdownModule"
-    }
+  "compilerOptions": {
+    "baseUrl": "",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es6", "dom"],
+    "mapRoot": "./",
+    "module": "es6",
+    "moduleResolution": "node",
+    "outDir": "../dist/out-tsc",
+    "sourceMap": true,
+    "target": "es5",
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
+  }
 }

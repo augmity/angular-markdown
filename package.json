@@ -7,7 +7,7 @@
     "email": "augmity@augmity.com"
   },
   "engines": {
-    "node": ">= 5.4.1"
+    "node": ">= 6.9.5"
   },
   "contributors": [],
   "repository": {
@@ -23,11 +23,8 @@
   "scripts": {
     "clean": "rimraf dist/",
     "build:aot": "ngc -p tsconfig.json",
-    "build:jit": "tsc -p tsconfig.json",
-    "build": "npm run clean && npm run build:aot",
-    "start": "npm run build"
+    "build:jit": "tsc -p tsconfig.json"
   },
-  "types": "dist/index.d.ts",
   "private": false,
   "keywords": [
     "augmity",
