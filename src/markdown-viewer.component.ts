@@ -10,7 +10,6 @@ const markdown = require('markdown-it');
  * @class MarkdownViewerComponent
  */
 @Component({
-    moduleId: module.id,
     selector: 'markdown-viewer',
     templateUrl: 'markdown-viewer.component.html'
 })

@@ -8,7 +8,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
  * @class MarkdownEditorComponent
  */
 @Component({
-  moduleId: module.id,
   selector: 'markdown-editor',
   templateUrl: 'markdown-editor.component.html'
 })
