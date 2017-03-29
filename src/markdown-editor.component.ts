@@ -18,7 +18,7 @@ export class MarkdownEditorComponent {
 
   onPaste(e: any) {
     let match, regex;
-    let results: string[] = [];
+    const results: string[] = [];
     let content = e.clipboardData.getData('text/plain');
 
     regex = /(youtu\.be\/|youtube(-nocookie)?.com\/(v\/|e\/|.*u\/\w+\/|embed\/|.*v=))([\w-]{11})/g;
@@ -32,7 +32,7 @@ export class MarkdownEditorComponent {
     // If we already processed this, don't let it be processed by the link generator
     if (results.length) {
       content = '';
-    }
+    };
 
     regex = /(^|\s)((https?:\/\/)?[\w-]+(\.[a-z-]+)+\.?(:\d+)?(\/\S*)?)/gim;
     while ((match = regex.exec(content)) !== null) {
@@ -45,12 +45,12 @@ export class MarkdownEditorComponent {
 
     if (results.length) {
       if (this.model && this.model !== '') {
-        this.model += `\n` + results.join(`\n\n`)
+        this.model += `\n` + results.join(`\n\n`);
       } else {
         this.model = results.join(`\n\n`);
       };
       this.modelChange.next(this.model);
-      
+
       e.stopPropagation();
       e.preventDefault();
     }

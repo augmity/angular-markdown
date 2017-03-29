@@ -32,6 +32,6 @@ export class MarkdownViewerComponent {
     this.markdownParser = new markdown({ linkify: true });
     this.markdownParser.use(markdownVideoPlugin, {
       youtube: { width: 640, height: 390 }
-    })
+    });
   }
 }
